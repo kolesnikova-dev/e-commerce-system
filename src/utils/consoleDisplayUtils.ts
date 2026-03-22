@@ -1,0 +1,7 @@
+import chalk from 'chalk';
+
+export const greenConsoleLog = (log: string) => console.log(chalk.green(log));
+
+export const capitalize = (word: string): string => {
+    return word.charAt(0).toUpperCase() + word.slice(1);
+};

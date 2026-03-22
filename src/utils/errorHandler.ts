@@ -1,8 +1,8 @@
-class DataError extends Error {
+class UnknownError extends Error {
     constructor(message: string) {
         super(message);
-        this.name = 'DataError';
-        Object.setPrototypeOf(this, DataError.prototype);
+        this.name = 'UnknownError';
+        Object.setPrototypeOf(this, UnknownError.prototype);
     }
 }
 
@@ -14,25 +14,7 @@ class NetworkError extends Error {
     }
 }
 
-class TimeOutError extends Error {
-    constructor(message: string) {
-        super(message);
-        this.name = 'TimeOutError';
-        Object.setPrototypeOf(this, TimeOutError.prototype);
-    }
-}
-
-class ServerError extends Error {
-    constructor(message: string) {
-        super(message);
-        this.name = 'ServerError';
-        Object.setPrototypeOf(this, ServerError.prototype);
-    }
-}
-
 export const errorHandler = {
-    DataError,
-    NetworkError,
-    TimeOutError,
-    ServerError
+    UnknownError,
+    NetworkError
 };

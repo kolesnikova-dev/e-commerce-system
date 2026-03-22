@@ -44,55 +44,30 @@ class Product {
     images: string[];
 
     constructor(
-        id: number,
-        title: string,
-        description: string,
-        category: string,
-        price: number,
-        discountPercentage: number,
-        rating: number,
-        stock: number,
-        tags: string[],
-        brand: string,
-        sku: string,
-        weight: number,
-        dimensions: {
-            length: number;
-            width: number;
-            height: number;
-        },
-        warrantyInformation: string,
-        shippingInformation: string,
-        availabilityStatus: string,
-        reviews: Review[],
-        returnPolicy: string,
-        minimumOrderQuantity: number,
-        meta: Meta,
-        thumbnail: string,
-        images: string[]
+        product: Product
     ) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.category = category;
-        this.price = price;
-        this.discountPercentage = discountPercentage;
-        this.rating = rating;
-        this.stock = stock;
-        this.tags = tags;
-        this.brand = brand;
-        this.sku = sku;
-        this.weight = weight;
-        this.dimensions = dimensions;
-        this.warrantyInformation = warrantyInformation;
-        this.shippingInformation = shippingInformation;
-        this.availabilityStatus = availabilityStatus;
-        this.reviews = reviews;
-        this.returnPolicy = returnPolicy;
-        this.minimumOrderQuantity = minimumOrderQuantity;
-        this.meta = meta;
-        this.thumbnail = thumbnail;
-        this.images = images;
+        this.id = product.id;
+        this.title = product.title;
+        this.description = product.description;
+        this.category = product.category;
+        this.price = product.price;
+        this.discountPercentage = product.discountPercentage;
+        this.rating = product.rating;
+        this.stock = product.stock;
+        this.tags = product.tags;
+        this.brand = product.brand;
+        this.sku = product.sku;
+        this.weight = product.weight;
+        this.dimensions = product.dimensions;
+        this.warrantyInformation = product.warrantyInformation;
+        this.shippingInformation = product.shippingInformation;
+        this.availabilityStatus = product.availabilityStatus;
+        this.reviews = product.reviews;
+        this.returnPolicy = product.returnPolicy;
+        this.minimumOrderQuantity = product.minimumOrderQuantity;
+        this.meta = product.meta;
+        this.thumbnail = product.thumbnail;
+        this.images = product.images;
     }
 
     displayDetails(): Product {

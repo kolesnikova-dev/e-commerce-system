@@ -5,7 +5,7 @@ const TAX_RATES = {
     standard: 4.75,
 }
 
-const calculateTax = (price: number, category: string): number => {
+export const calculateTax = (price: number, category: string): number => {
     if (category === GROCERIES) {
         return price * (TAX_RATES.groceries / 100);
     }
